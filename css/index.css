@@ -1,0 +1,173 @@
+body{
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+body > div.background.wrapper > video.background.video{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url('../img/background-wrapper.jpg') no-repeat;*/
+  background-color: black;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+body > div.main.wrapper{
+  position: relative;
+}
+
+/* section containers*/
+body > div.main.wrapper > div.main.section{
+  min-height: 450px;
+  padding: 5em 0;
+}
+
+.full.height{
+  height: 100vh;
+}
+
+.background.color{
+  background-color: white;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center{
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 300px;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center > div.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 200px;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center > div.wrapper > h1.ui.header{
+  color: #ddd;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center > div.wrapper > h1.ui.header.link{
+  color: #ddd;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center > div.wrapper > h5.ui.header{
+  font-size: 14px;
+  color: #ddd;
+  text-align: center;
+  letter-spacing: .16642857142857em;
+  line-height: 1.25;
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body > div.main.wrapper > div.main.section > div.wrapper.center > div.wrapper > div.button > a.ui.huge.inverted.download.button{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*footer*/
+body > div.main.wrapper > footer.main.section{
+  height: 30vh;
+  min-height: 300px;
+  background-color: #e8e8e8;
+}
+
+body > div.main.wrapper > header.main.section{
+  height: 100px;
+  min-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 10;
+  position: absolute;
+}
+
+/*header wrapper*/
+body > div.main.wrapper > header.main.section > div.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-height: 100px;
+}
+
+/*header center*/
+body > div.main.wrapper > header.main.section > div.wrapper > div.center{
+  display: flex;
+  width: 60%;
+  min-width: 600px;
+  z-index: 10;
+  position: absolute;
+}
+
+body > div.main.wrapper > header.main.section > div.wrapper > div.center > div.ui.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  background: transparent;
+  font-weight: 400;
+  border: none;
+  box-shadow: none;
+  border-radius: .28571429rem;
+  min-height: 2.85714286em;
+}
+
+body > div.main.wrapper > header.main.section > div.wrapper > div.center > div.ui.menu > a.item{
+  color: #fff;
+  transition: all .15s ease-in-out;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0.11142857142857em;
+  font-size: 13px;
+}
+
+body > div.main.wrapper > header.main.section > div.wrapper > div.center > div.ui.menu > a.item:hover {
+  background: none;
+}
+
+/*header left*/
+body > div.main.wrapper > header.main.section > div.wrapper > div.left{
+  display: flex;
+  width: 20%;
+  min-width: 175px;
+}
+
+body > div.main.wrapper > header.main.section > div.wrapper > div.left > a.item{
+  margin: auto;
+}
+
+body > div.main.wrapper > header.main.section > div.wrapper > div.left > a.item > img.logo{
+  height: 100%;
+}
+
+/*header right*/
+body > div.main.wrapper > header.main.section > div.wrapper > div.right{
+  display: flex;
+  width: 20%;
+  min-width: 175px;
+}
